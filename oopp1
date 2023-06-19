@@ -1,0 +1,26 @@
+class player():
+    health= 100
+    speed= 30
+    weapon="Punching"
+
+    def __init__(self,health=100,speed=30,weapon="punching"):
+        self.health=health
+        self.speed=speed
+        self.weapon=weapon
+        print("Player health :",health)
+        print("Running speed of player :",speed)
+        print("Weapon eqquiped :",weapon)
+
+    def Healthplus(self,healthplus=20):
+       self.healthplus=healthplus
+       print("Current Health = ",player.health+healthplus)
+
+    def Accelerate(self,accelerate):
+        print("Current Speed = ",player.speed+accelerate)
+
+    def Weapon(self,weapon):
+        self.weapon=weapon
+        print("Weapon: ",weapon)
+
+Healthplus()
+#pl.Weapon("mk")
